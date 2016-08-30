@@ -21,8 +21,8 @@ description: > # this means to ignore newlines until "baseurl:"
   programmering och träffa likasinnade.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://videumcodeup.com" # the base hostname & protocol for your site
-twitter_username:
-github_username:  videumcodeup
+twitter_username: videumcodeup
+github_username: videumcodeup
 
 # Build settings
 markdown: kramdown
