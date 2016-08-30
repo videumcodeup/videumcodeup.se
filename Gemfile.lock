@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/videumcodeup/videumcodeup-jekyll-theme.git
+  revision: b20575b65741b30270a3852c8405be41a94b9796
+  specs:
+    videumcodeup-jekyll-theme (1.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -134,6 +140,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   minima
+  videumcodeup-jekyll-theme!
 
 RUBY VERSION
    ruby 2.3.1p112
