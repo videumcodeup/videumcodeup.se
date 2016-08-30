@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Videum Codeup"
+date:   2016-08-30 20:17:59 +0200
+categories:
+---
+Varannan tisdag samlas vi för att snacka programmering, experimentera
+i olika workshops och träffa andra med samma intresse som du.
+
+Det spelar ingen roll om du programmerar varje dag eller aldrig rört
+en dator innan. Finns ett intresse, kommer du garanterat tycka Videum
+Codeup är något för dig.
+
+Vi ses nästa gång!
+
+Albert, Andreas och Kevin
