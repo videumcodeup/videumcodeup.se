@@ -26,3 +26,4 @@ github_username:  videumcodeup
 
 # Build settings
 markdown: kramdown
+theme: minima
