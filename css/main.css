@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-size: 20px;
+}
+
+img {
+  border: 0;
+  height: auto;
+}
+
+.site-header, .site-nav, .site-main, .site-footer {
+  padding: 10px;
+}
+
+.site-header {
+  text-align: center;
+}
+
+.site-title {
+  display: inline-block;
+  margin: 0 auto;
+}
+.site-title-image {
+  max-width: 100%;
+}
+.site-title h1 {
+  display: none;
+}
+
+.site-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3a248;
+}
+
+.site-widget {
+  padding: 30px;
+}
+
+.site-quote {
+  margin: 0;
+  font-size: 32px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.site-nav {
+  text-align: center;
+}
+
+.site-nav-item {
+  margin: 32px;
+  display: inline-block;
+}
+
+.site-footer {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.meetup-widget {
+  display: inline-block;
+}
+
+.meetup-event-title {
+  margin-top: 0.4em;
+}
+
+@media (min-width: 800px) {
+  .site-main {
+    flex-direction: row;
+  }
+  .site-widget {
+    max-width: 46%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-widget {
+    max-width: 38%;
+  }
+}

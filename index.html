@@ -1,21 +1,129 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="home">
+    <title>Videum Codeup</title>
+    <meta name="description" content="Videum Codeup är en samlingsplats för programmerare i Växjö-regionen. Vi ses två kvällar i månaden för att snacka programmering och träffa likasinnade.">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="/images/videumcodeup-favicon.ico" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title"
+        href="/"
+        alt="Videum Codeup"
+        class="site-title">
+        <h1>Videum Codeup</h1>
+        <img
+          class="site-title-image"
+          alt="Videum Codeup Logo"
+          src="/images/videumcodeup-logo.png"
+          width="500"
+          height="229" />
+      </a>
+    </header>
+    <main class="site-main">
+      <section class="site-widget">
+        <blockquote class="site-quote">
+          Videum Codeup är en samlingsplats för programmerare i Växjö-regionen.
+          <br />
+          Vi ses två kvällar i månaden för att snacka programmering och träffa
+          likasinnade.
+        </blockquote>
+      </section>
+      <section class="site-widget meetup-widget">
+        <!-- This section is using Twine js data binding -->
+        <div class="meetup-events hide" data-bind-show="events">
+          <div class="meetup-event-upcoming">
+            Nästa meetup:
+            <a
+              data-bind-href="events.upcoming.link"
+              data-bind-show="events.upcoming">
+              <h2
+                class="meetup-event-title"
+                data-bind="events.upcoming.name"></h2>
+            </a>
+            <div data-bind-hide="!events.upcoming">
+              <h2 class="meetup-event-title">
+                404 Not Found
+              </h2>
+            </div>
+          </div>
+          <div class="meetup-event-last">
+            Föregående meetup:
+            <a data-bind-href="events.past.link">
+              <h2
+                class="meetup-event-title"
+                data-bind="events.past.name"></h2>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <nav class="site-nav">
+      <a href="https://meetup.com/videumcodeup" class="site-nav-item meetup-link">
+        <img
+          class="site-nav-item-image"
+          alt="Meetup logo"
+          src="/images/meetup-logo.png"
+          width="128"
+          height="128"
+        />
+        <div class="site-nav-item-title">Gå med i vår Meetup-grupp</div>
+        <div class="site-nav-item-url">meetup.com/videumcodeup</div>
+      </a>
+      <a href="https://github.com/videumcodeup" class="site-nav-item">
+        <img
+          class="site-nav-item-image"
+          alt="GitHub logo"
+          src="/images/github-octocat.png" 
+          width="128"
+          height="128"
+        />
+        <div class="site-nav-item-title">Se vår öppna källkod på GitHub</div>
+        <div class="site-nav-item-url">github.com/videumcodeup</div>
+      </a>
+      <a href="https://twitter.com/videumcodeup" class="site-nav-item">
+        <img
+          class="site-nav-item-image"
+          alt="Twitter logo"
+          src="/images/twitter-logo.png" 
+          width="128"
+          height="128"
+        />
+        <div class="site-nav-item-title">Följ oss på Twitter</div>
+        <div class="site-nav-item-url">twitter.com/videumcodeup</div>
+      </a>
+      <a href="https://www.facebook.com/videumcodeup" class="site-nav-item">
+        <img
+          class="site-nav-item-image"
+          alt="Facebook logo"
+          src="/images/facebook-logo.png"
+          width="128"
+          height="128"
+        />
+        <div class="site-nav-item-title">Följ oss på Facebook</div>
+        <div class="site-nav-item-url">facebook.com/videumcodeup</div>
+      </a>
+    </nav>
+    <footer class="site-footer">
+      <span>Videum Codeup</span>
+      <a href="mailto:info@videumcodeup.se">info@videumcodeup.se</a>
+    </footer>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+    <style type="text/css">.hide { display: none; }</style><!-- for twine -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"
+      integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twine/1.0.2/twine.min.js"
+      integrity="sha256-Qozy8AyRnPUn3262tMVT5uSu0RchA5+vPn/qQq0M4uo="
+      crossorigin="anonymous"></script>
+    <script src="/js/meetup-widget.js"></script>
+  </body>
+</html>
