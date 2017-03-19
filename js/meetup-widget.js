@@ -2,8 +2,8 @@
 var context = {};
 
 (() => {
-  // Fetch meetup events json from gomix app
-  const api = 'https://videumcodeup-meetup-widget.gomix.me'
+  // Fetch meetup events json from glitch app
+  const api = 'https://videumcodeup-meetup-widget.glitch.me'
 
   // Helpers
   const byTimeAsc = (a, b) => a.time < b.time
