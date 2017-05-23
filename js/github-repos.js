@@ -3,5 +3,6 @@
     document.querySelector(".github-repos-container").innerHTML = repos.reduce((string, repo) => {
       return `${string}<div class="repo"><a href="${repo.html_url}">${repo.name}</a></div>`;
     }, "");
+    document.querySelector(".github-repos").style.display = "block";
   });
 })();

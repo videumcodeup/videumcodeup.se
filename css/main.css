@@ -88,6 +88,7 @@ a {
 
 .github-repos {
   background-color: hsl(0, 0%, 90%);
+  display: none;
   padding: 0 10% 50px 10%;
   width: 100%;
 }
