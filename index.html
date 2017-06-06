@@ -27,7 +27,7 @@
       </a>
     </header>
     <main class="site-main">
-      <section class="site-widget">
+      <section class="site-widget description-widget">
         <blockquote class="site-quote">
           Videum Codeup är en samlingsplats för programmerare i Växjö-regionen.
           <br />
@@ -47,7 +47,7 @@
                 class="meetup-event-title"
                 data-bind="events.upcoming.name"></h2>
             </a>
-            <div data-bind-hide="!events.upcoming">
+            <div data-bind-show="!events.upcoming">
               <h2 class="meetup-event-title">
                 404 Not Found
               </h2>

@@ -21,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+/* Needed for twine.js */
+.hide {
+  display: none;
+}
+
 .site-header, .site-nav, .site-main, .site-footer {
   padding: 10px;
 }
@@ -74,7 +79,13 @@ a {
   text-align: center;
 }
 
+.description-widget {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .meetup-widget {
+  min-width: 46%;
   display: inline-block;
 }
 
